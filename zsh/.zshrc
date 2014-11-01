@@ -3,7 +3,10 @@ autoload colors; colors
 PROMPT="%{${fg[green]}%}[%*]%#%f "
 RPROMPT="%{${fg[yellow]}%}[%48<...<%~%<<]%f"
 
-fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+if which rbenv > /dev/null ; then
+    fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+fi
+
 autoload -U compinit
 compinit -u
 
