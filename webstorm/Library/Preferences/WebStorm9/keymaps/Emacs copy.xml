@@ -1,0 +1,141 @@
+<keymap version="1" name="Emacs copy" parent="Emacs">
+  <action id="$Undo">
+    <keyboard-shortcut first-keystroke="shift control MINUS" />
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="U" />
+  </action>
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="control alt LEFT" />
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="meta OPEN_BRACKET" />
+  </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="alt SEMICOLON" />
+    <keyboard-shortcut first-keystroke="control SLASH" />
+  </action>
+  <action id="Editor Undo">
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="U" />
+  </action>
+  <action id="EditorBackSpace">
+    <keyboard-shortcut first-keystroke="BACK_SPACE" />
+    <keyboard-shortcut first-keystroke="shift BACK_SPACE" />
+    <keyboard-shortcut first-keystroke="control H" />
+  </action>
+  <action id="EditorDuplicate" />
+  <action id="EditorKillRingSave">
+    <keyboard-shortcut first-keystroke="alt W" />
+    <keyboard-shortcut first-keystroke="meta W" />
+  </action>
+  <action id="EditorKillToWordEnd">
+    <keyboard-shortcut first-keystroke="alt D" />
+    <keyboard-shortcut first-keystroke="meta D" />
+  </action>
+  <action id="EditorNextWord">
+    <keyboard-shortcut first-keystroke="control RIGHT" />
+    <keyboard-shortcut first-keystroke="alt F" />
+    <keyboard-shortcut first-keystroke="ESCAPE" second-keystroke="control F" />
+    <keyboard-shortcut first-keystroke="meta F" />
+  </action>
+  <action id="EditorPageUp">
+    <keyboard-shortcut first-keystroke="PAGE_UP" />
+    <keyboard-shortcut first-keystroke="control Z" />
+    <keyboard-shortcut first-keystroke="alt V" />
+    <keyboard-shortcut first-keystroke="meta V" />
+  </action>
+  <action id="EditorPreviousWord">
+    <keyboard-shortcut first-keystroke="control LEFT" />
+    <keyboard-shortcut first-keystroke="alt B" />
+    <keyboard-shortcut first-keystroke="ESCAPE" second-keystroke="control B" />
+    <keyboard-shortcut first-keystroke="meta B" />
+  </action>
+  <action id="EditorScrollToCenter">
+    <keyboard-shortcut first-keystroke="control M" />
+    <keyboard-shortcut first-keystroke="control L" />
+  </action>
+  <action id="EditorTab">
+    <keyboard-shortcut first-keystroke="meta I" />
+  </action>
+  <action id="EditorTextEnd">
+    <keyboard-shortcut first-keystroke="control END" />
+    <keyboard-shortcut first-keystroke="shift alt PERIOD" />
+    <keyboard-shortcut first-keystroke="shift meta PERIOD" />
+  </action>
+  <action id="EditorTextStart">
+    <keyboard-shortcut first-keystroke="control HOME" />
+    <keyboard-shortcut first-keystroke="shift alt COMMA" />
+    <keyboard-shortcut first-keystroke="ESCAPE" second-keystroke="COMMA" />
+    <keyboard-shortcut first-keystroke="shift meta COMMA" />
+  </action>
+  <action id="EmacsStyleIndent">
+    <keyboard-shortcut first-keystroke="TAB" />
+    <keyboard-shortcut first-keystroke="control I" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="alt S" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="control alt RIGHT" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="meta CLOSE_BRACKET" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="control alt G" />
+    <keyboard-shortcut first-keystroke="ESCAPE" second-keystroke="PERIOD" />
+    <keyboard-shortcut first-keystroke="alt PERIOD" />
+    <mouse-shortcut keystroke="control button1" />
+    <keyboard-shortcut first-keystroke="F3" />
+  </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="alt G" />
+    <keyboard-shortcut first-keystroke="meta G" second-keystroke="G" />
+  </action>
+  <action id="GotoSymbol">
+    <keyboard-shortcut first-keystroke="shift control alt N" />
+    <keyboard-shortcut first-keystroke="meta G" second-keystroke="J" />
+  </action>
+  <action id="Images.Editor.ActualSize">
+    <keyboard-shortcut first-keystroke="control DIVIDE" />
+  </action>
+  <action id="ImplementMethods" />
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="meta N" />
+  </action>
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="O" />
+  </action>
+  <action id="NextTab">
+    <keyboard-shortcut first-keystroke="alt RIGHT" />
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="N" />
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="B" />
+  </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift F6" />
+    <keyboard-shortcut first-keystroke="shift meta R" />
+  </action>
+  <action id="SavaAs">
+    <keyboard-shortcut first-keystroke="shift control S" />
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="control W" />
+  </action>
+  <action id="SaveAll" />
+  <action id="SaveDocument">
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="control S" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="control alt ENTER" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="control alt DOWN" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="control alt LEFT" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="control alt RIGHT" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="control alt UP" />
+  </action>
+  <action id="Switcher">
+    <keyboard-shortcut first-keystroke="control X" second-keystroke="control B" />
+  </action>
+  <action id="TypeHierarchy" />
+</keymap>
