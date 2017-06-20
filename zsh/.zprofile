@@ -1,5 +1,6 @@
 typeset -U path
 path=(
+    ~/dev/bin
     /usr/local/bin
     $path
 )
