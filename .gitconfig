@@ -1,9 +1,24 @@
-[filter "media"]
-	clean = git media clean %f
-	smudge = git media smudge %f
-	required = true
 [user]
-	name = kwkbtr
-	email = kwkbtr@vivliostyle.com
+	name = KAWAKUBO Toru
+	email = other@kwkbtr.info
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [push]
 	default = simple
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[credential]
+	helper = osxkeychain
+
+[includeIf "gitdir:/Volumes/data/dev/q/"]
+	path = /Volumes/data/dev/q/.gitconfig
+
+[includeIf "gitdir:/Volumes/data/dev/kwkbtr/"]
+	path = /Volumes/data/dev/kwkbtr/.gitconfig
+
+[includeIf "gitdir:/Volumes/data/dev/tm/"]
+	path = /Volumes/data/dev/tm/.gitconfig

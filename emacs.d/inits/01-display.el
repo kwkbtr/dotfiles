@@ -2,8 +2,17 @@
 (load-theme 'deeper-blue)
 
 ;; Window Setting
+;; (if window-system
+;;     (progn (setq initial-frame-alist '((fullscreen . maximized)))))
 (if window-system
-    (progn (setq initial-frame-alist '((fullscreen . maximized)))))
+    (progn (setq initial-frame-alist
+                 '(
+                   (top . 0)
+                   (left . 800)
+                   (width . 120)
+                   (height . 100)
+                   )
+                 )))
 
 ;; Highlight current line
 (global-hl-line-mode)
