@@ -1,7 +1,9 @@
 if [ -d /data/dev ]; then
     dev_data=/data/dev
-else
+elif [ -d /Volumes/data/dev ]; then
     dev_data=/Volumes/data/dev
+else
+    dev_data=$HOME/dev
 fi
 
 typeset -U path
@@ -14,6 +16,11 @@ path=(
 )
 
 if [ -d $dev_data ]; then
+    path=(
+        $dev_data/bin
+        $dev_data/anyenv/bin
+        $path
+    )
     if which anyenv > /dev/null ; then
         export ANYENV_ROOT=$dev_data/anyenv
         export ANYENV_DEFINITION_ROOT=$ANYENV_ROOT/anyenv-install
@@ -31,6 +38,13 @@ fi
 
 if which anyenv > /dev/null ; then
     eval "$(anyenv init --no-rehash -)"
+    if which pyenv > /dev/null ; then
+        path=(
+            $PYENV_ROOT/bin
+            $path
+        )
+        eval "$(pyenv init --path)"
+    fi
 else
     if which rbenv > /dev/null ; then
         eval "$(rbenv init --no-rehash -)"
