@@ -1,4 +1,6 @@
-zsh/.zcompdump
+zsh/.zcompdump*
+zsh/.zsh_history
+zsh/.zsh_sessions
 
 emacs.d/.cask
 emacs.d/auto-save-list

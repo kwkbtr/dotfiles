@@ -1,3 +1,14 @@
+path=(
+    ~/.local/bin
+    /opt/homebrew/bin
+    /opt/homebrew/sbin
+    $path
+)
+. "$HOME/.cargo/env"
+typeset -U path
+
+return 0
+
 if [ -d /data/dev ]; then
     dev_data=/data/dev
 elif [ -d /Volumes/data/dev ]; then
